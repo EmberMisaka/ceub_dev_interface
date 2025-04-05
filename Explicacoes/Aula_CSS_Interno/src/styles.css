@@ -1,0 +1,22 @@
+body {
+    background-color: #fafafa;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: purple;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+#titulo-principal{
+    color: navy;
+    font: 24px;
+}
