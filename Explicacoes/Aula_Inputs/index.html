@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="name">
+            Nome:
+            <input type="text" name="nome"><br>
+        </label>
+
+        <label for="email">
+            Email
+            <input type="email" name="email" required><br>
+        </label>
+
+        <label for="password">
+            Senha: 
+            <input type="password" name="senha" pattern="[A-za-z]{3,}" title="Apenas letras, mínimo 3 caracteres"><br>
+
+        </label>
+
+        <label for="">
+            Idade: 
+            <input type="number" name="idade" id="" min="1" max="150"><br>
+        </label>
+
+        <label for="">
+            Data de Nascimento: 
+            <input type="date" name="nascimento" id=""><br>
+        </label>
+
+        <label for="">
+            Aceito os Termos
+            <input type="checkbox" name="termos" id="">
+        </label>
+        <hr>
+
+        <p>Gênero</p>
+        <label for="">
+            Masculino:
+            <input type="radio" name="masc" id=""><br>
+        </label>
+        <label for="">
+            Feminino
+            <input type="radio" name="fem" id=""><br>
+        </label>
+
+        <select name="estado" id="estado" required>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="df" disabled>Distrito Federal</option>
+        </select>
+
+        <hr>
+        <input type="submit" name="enviar" id="">
+        <input type="reset" name="Limpar" id="">
+
+    </form>
+
+</body>
+</html>
