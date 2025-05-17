@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #efefef;
+        }
+
+        form {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5vh;
+        }
+
+        fieldset{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <!-- Nome -->
+            <label for="">
+                Nome:
+                <input type="text" name="nome" pattern="[A-za-z]{3,}">
+            </label>
+        
+            <br>
+        
+            <!-- Email -->
+            <label for="email">
+                Email:
+                <input type="email" name="email" required>
+            </label>
+        
+            <br>
+        
+            <!-- Idade -->
+            <label for="">
+                Idade:
+                <input type="number" name="idade" id="" min="17" max="100">
+            </label>
+
+        </fieldset>
+    
+        <fieldset>
+            <legend>Matrícula</legend>
+            
+            <!-- Dropdown Cursos -->
+            <select name="cursoDesejado" id="">
+                <option value="defaut" selected disabled>Selecione o Curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="psico">Psicologia</option>
+                <option value="biomed">Biomedicina</option>
+            </select>
+        
+            <!-- Período de Estudos -->
+            <h3>Período</h3>
+            <label for="">
+                Manhã
+                <input type="radio" required>
+                <br>
+        
+                Tarde
+                <input type="radio">
+                <br>
+        
+                Noite
+                <input type="radio">
+                <br>
+            </label>
+
+            
+            
+            
+            <!-- Bolsa -->
+            <label for="">
+                Deseja Bolsa?
+                <input type="checkbox" name="" id="">
+            </label>
+            
+            <br>
+            
+            <!-- Currículo -->
+            <label for="">
+                <textarea name="curriculum" id="" rows="5" cols="30">Escreva seu currículo</textarea>
+            </label>
+            
+            <br>
+            
+            <!-- Termos -->
+            <label for="">
+                Aceita os termos?
+                <input type="checkbox" required>
+            </label>
+
+            <br>
+            
+            <!-- Submit e Reset -->
+            <input type="submit" name="enviar" id="">
+            <input type="reset" name="Limpar" id="">
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>
